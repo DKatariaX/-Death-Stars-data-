@@ -7,8 +7,8 @@ Created on Wed Oct 26 19:04:23 2022
 
 import pandas as pd
 
-data_f = pd.read_csv(r'C:\Users\DK\Downloads\job2future-result.csv')
-data_p = pd.read_csv(r'C:\Users\DK\Downloads\job1past-result.csv')
+data_f = pd.read_csv(r'') # enter local file location
+data_p = pd.read_csv(r'') # enter local file location
 imp_f = pd.DataFrame(data_f, columns=['r_min','t_yrs'])
 imp_p = pd.DataFrame(data_p, columns=['r_min','t_yrs'])
 
