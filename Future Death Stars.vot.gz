@@ -1,0 +1,723 @@
+<?xml version='1.0'?>
+<VOTABLE version="1.4"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 4.1-3 (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2022-10-23T23:15:19
+ !-->
+<RESOURCE>
+<RESOURCE>
+  <COOSYS ID="t3-coosys-1" epoch="J2016.0" system="ICRS"/>
+</RESOURCE>
+<TABLE name="job2-result%2520real.vot.gz" nrows="34">
+<PARAM arraysize="2" datatype="char" name="QUERY_STATUS" value="OK"/>
+<PARAM arraysize="619" datatype="char" name="QUERY" value="SELECT gaia.designation ,   gaia.ra ,   gaia.dec ,   gaia.parallax ,   gaia.parallax_error ,   gaia.pm ,   gaia.pmra ,   gaia.pmra_error ,   gaia.pmdec ,   gaia.pmdec_error ,   gaia.phot_g_mean_mag ,   gaia.bp_rp ,   gaia.radial_velocity ,   gaia.radial_velocity_error  FROM gaiadr3.gaia_source AS gaia  WHERE gaia.radial_velocity &lt; 0.0 AND   -1.0*gaia.radial_velocity &gt;= 10.0*(gaia.radial_velocity_error) AND  gaia.pmra_error &lt;= 0.03 AND  gaia.pmdec_error &lt;= 0.03 AND  gaia.parallax &gt;= 10*(gaia.parallax_error) AND  (4.74*206265.0*1000.0*gaia.pm)/(gaia.parallax*gaia.parallax*-1.0*gaia.radial_velocity) &lt;= 1.3*206265.0">
+<DESCRIPTION>SELECT gaia.designation , 
+ gaia.ra , 
+ gaia.dec , 
+ gaia.parallax , 
+ gaia.parallax_error , 
+ gaia.pm , 
+ gaia.pmra , 
+ gaia.pmra_error , 
+ gaia.pmdec , 
+ gaia.pmdec_error , 
+ gaia.phot_g_mean_mag , 
+ gaia.bp_rp , 
+ gaia.radial_velocity , 
+ gaia.radial_velocity_error 
+FROM gaiadr3.gaia_source AS gaia 
+WHERE gaia.radial_velocity &lt; 0.0 AND 
+ -1.0*gaia.radial_velocity &gt;= 10.0*(gaia.radial_velocity_error) AND
+ gaia.pmra_error &lt;= 0.03 AND
+ gaia.pmdec_error &lt;= 0.03 AND
+ gaia.parallax &gt;= 10*(gaia.parallax_error) AND
+ (4.74*206265.0*1000.0*gaia.pm)/(gaia.parallax*gaia.parallax*-1.0*gaia.radial_velocity) &lt;= 1.3*206265.0</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="93" datatype="char" name="CAPTION" value="How to cite and acknowledge Gaia: https://gea.esac.esa.int/archive/documentation/credits.html">
+<DESCRIPTION>How to cite and acknowledge Gaia: https://gea.esac.esa.int/archive/documentation/credits.html</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="*" datatype="char" name="PAGE" value=""/>
+<PARAM arraysize="*" datatype="char" name="PAGE_SIZE" value=""/>
+<PARAM arraysize="14" datatype="char" name="JOBID" value="1666471046343O">
+<DESCRIPTION>1666471046343O</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="4" datatype="char" name="JOBNAME" value="job2">
+<DESCRIPTION>job2</DESCRIPTION>
+</PARAM>
+<FIELD ID="DESIGNATION" arraysize="*" datatype="char" name="designation" ucd="meta.id;meta.main">
+<DESCRIPTION>Unique source designation (unique across all Data Releases)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="ra" ref="t3-coosys-1" ucd="pos.eq.ra;meta.main" unit="deg" utype="stc:AstroCoords.Position3D.Value3.C1">
+<DESCRIPTION>Right ascension</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="dec" ref="t3-coosys-1" ucd="pos.eq.dec;meta.main" unit="deg" utype="stc:AstroCoords.Position3D.Value3.C2">
+<DESCRIPTION>Declination</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="parallax" ucd="pos.parallax.trig" unit="mas">
+<DESCRIPTION>Parallax</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="parallax_error" ucd="stat.error;pos.parallax.trig" unit="mas">
+<DESCRIPTION>Standard error of parallax</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="pm" ucd="pos.pm;pos.eq" unit="mas.yr**-1">
+<DESCRIPTION>Total proper motion</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="pmra" ucd="pos.pm;pos.eq.ra" unit="mas.yr**-1" utype="stc:AstroCoords.Velocity3D.Value3.C1">
+<DESCRIPTION>Proper motion in right ascension direction</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="pmra_error" ucd="stat.error;pos.pm;pos.eq.ra" unit="mas.yr**-1" utype="stc:AstroCoords.Velocity3D.Error3.C1">
+<DESCRIPTION>Standard error of proper motion in right ascension direction</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="pmdec" ucd="pos.pm;pos.eq.dec" unit="mas.yr**-1" utype="stc:AstroCoords.Velocity3D.Value3.C2">
+<DESCRIPTION>Proper motion in declination direction</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="pmdec_error" ucd="stat.error;pos.pm;pos.eq.dec" unit="mas.yr**-1" utype="stc:AstroCoords.Velocity3D.Error3.C2">
+<DESCRIPTION>Standard error of proper motion in declination direction</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="phot_g_mean_mag" ucd="phot.mag;em.opt" unit="mag">
+<DESCRIPTION>G-band mean magnitude</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="bp_rp" ucd="phot.color;em.opt.B;em.opt.R" unit="mag">
+<DESCRIPTION>BP - RP colour</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="radial_velocity" ucd="spect.dopplerVeloc.opt;em.opt.I" unit="km.s**-1" utype="stc:AstroCoords.Velocity3D.Value3.C3">
+<DESCRIPTION>Radial velocity</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="radial_velocity_error" ucd="stat.error;spect.dopplerVeloc.opt;em.opt.I" unit="km.s**-1" utype="stc:AstroCoords.Velocity3D.Error3.C3">
+<DESCRIPTION>Radial velocity error</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="r_min" unit="AU">
+<DESCRIPTION>minimum approach distance  (Expression: (4.74*206265*1000*pm)/(parallax*parallax*-1.0*radial_velocity))</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="t_yrs" unit="years">
+<DESCRIPTION>travel time  (Expression: (3.0857E16)/(parallax*-1.0*radial_velocity*3.1557E7))</DESCRIPTION>
+</FIELD>
+<DATA>
+<TABLEDATA>
+  <TR>
+    <TD>Gaia DR3 3320184202856435840</TD>
+    <TD>89.10409821980528</TD>
+    <TD>5.359344709329013</TD>
+    <TD>123.19885316518207</TD>
+    <TD>0.017005328</TD>
+    <TD>1026.4637</TD>
+    <TD>-444.6846044467807</TD>
+    <TD>0.017798543</TD>
+    <TD>-925.1396520378544</TD>
+    <TD>0.015032777</TD>
+    <TD>13.9694195</TD>
+    <TD>0.83092594</TD>
+    <TD>-414.01544</TD>
+    <TD>10.4149475</TD>
+    <TD>159704.67435319276</TD>
+    <TD>19170.559403066345</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 5544743925212648320</TD>
+    <TD>123.11241756747457</TD>
+    <TD>-35.49549759663225</TD>
+    <TD>89.50642598239092</TD>
+    <TD>0.015485769</TD>
+    <TD>71.69701</TD>
+    <TD>-65.47944990434657</TD>
+    <TD>0.016051292</TD>
+    <TD>-29.204493755420287</TD>
+    <TD>0.017759077</TD>
+    <TD>14.346308</TD>
+    <TD>0.6834936</TD>
+    <TD>-373.73666</TD>
+    <TD>8.178549</TD>
+    <TD>23411.582354844173</TD>
+    <TD>29230.62289905092</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 4197774664320263936</TD>
+    <TD>286.04854362694607</TD>
+    <TD>-12.749860646925661</TD>
+    <TD>0.5932792234195226</TD>
+    <TD>0.025235243</TD>
+    <TD>0.013841121</TD>
+    <TD>0.005626954588362837</TD>
+    <TD>0.024449421</TD>
+    <TD>0.01264571148221319</TD>
+    <TD>0.021036059</TD>
+    <TD>14.697744</TD>
+    <TD>1.0519457</TD>
+    <TD>-148.02856</TD>
+    <TD>9.139693</TD>
+    <TD>259723.56514747415</TD>
+    <TD>1.1134054006574687E7</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 1129149723913123456</TD>
+    <TD>176.9394079814786</TD>
+    <TD>78.69329745305299</TD>
+    <TD>190.32514271529305</TD>
+    <TD>0.019362431</TD>
+    <TD>889.55194</TD>
+    <TD>748.4182886031707</TD>
+    <TD>0.023584152</TD>
+    <TD>480.80430000482306</TD>
+    <TD>0.025972635</TD>
+    <TD>9.551337</TD>
+    <TD>2.701994</TD>
+    <TD>-111.504585</TD>
+    <TD>0.15323243</TD>
+    <TD>215322.85990466422</TD>
+    <TD>46075.39847728949</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 4084338599419600384</TD>
+    <TD>289.56825276326316</TD>
+    <TD>-18.413303418529654</TD>
+    <TD>0.42971839606476864</TD>
+    <TD>0.022470076</TD>
+    <TD>0.0016291492</TD>
+    <TD>0.0015691203992092874</TD>
+    <TD>0.025515286</TD>
+    <TD>4.3816447172547417E-4</TD>
+    <TD>0.020733219</TD>
+    <TD>14.284772</TD>
+    <TD>1.2576103</TD>
+    <TD>-105.67451</TD>
+    <TD>4.3415613</TD>
+    <TD>81625.64331244455</TD>
+    <TD>2.1532963966578398E7</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 4312544849139966464</TD>
+    <TD>286.4877172247391</TD>
+    <TD>10.958330816198693</TD>
+    <TD>19.070625897978555</TD>
+    <TD>0.020272521</TD>
+    <TD>8.459679</TD>
+    <TD>0.9530531564338549</TD>
+    <TD>0.020477528</TD>
+    <TD>-8.405822973779308</TD>
+    <TD>0.019178575</TD>
+    <TD>13.814394</TD>
+    <TD>2.653469</TD>
+    <TD>-97.68652</TD>
+    <TD>4.53258</TD>
+    <TD>232805.48140805864</TD>
+    <TD>524878.0243592681</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 1952802469918554368</TD>
+    <TD>326.5928819418585</TD>
+    <TD>38.21751708114409</TD>
+    <TD>141.89460573855888</TD>
+    <TD>0.021211391</TD>
+    <TD>201.00949</TD>
+    <TD>161.4536764489594</TD>
+    <TD>0.017373964</TD>
+    <TD>-119.73940230903497</TD>
+    <TD>0.019083459</TD>
+    <TD>10.830858</TD>
+    <TD>2.814188</TD>
+    <TD>-82.91139</TD>
+    <TD>0.17733116</TD>
+    <TD>117726.56368356306</TD>
+    <TD>83114.71065985209</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 4593677465371834880</TD>
+    <TD>264.21735919042703</TD>
+    <TD>24.787895703555503</TD>
+    <TD>2.8572380940017874</TD>
+    <TD>0.027494382</TD>
+    <TD>0.16304837</TD>
+    <TD>0.11348486382906356</TD>
+    <TD>0.022482764</TD>
+    <TD>0.11707245331730633</TD>
+    <TD>0.027294299</TD>
+    <TD>12.031286</TD>
+    <TD>0.81193924</TD>
+    <TD>-81.611496</TD>
+    <TD>0.70380145</TD>
+    <TD>239263.33209603632</TD>
+    <TD>4193341.384727391</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 1132123559268892288</TD>
+    <TD>146.4240617097901</TD>
+    <TD>78.80555096508473</TD>
+    <TD>4.837983638756834</TD>
+    <TD>0.012870867</TD>
+    <TD>0.3773366</TD>
+    <TD>0.37421417258869816</TD>
+    <TD>0.01530059</TD>
+    <TD>-0.04844220756031197</TD>
+    <TD>0.014917352</TD>
+    <TD>13.64163</TD>
+    <TD>1.4146824</TD>
+    <TD>-77.260735</TD>
+    <TD>2.1494477</TD>
+    <TD>204007.0525862289</TD>
+    <TD>2615982.0668136533</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 5965628764355799552</TD>
+    <TD>258.42887125046025</TD>
+    <TD>-42.57448128099508</TD>
+    <TD>1.1247672730802507</TD>
+    <TD>0.018668609</TD>
+    <TD>0.020823905</TD>
+    <TD>0.01363346389032704</TD>
+    <TD>0.025631953</TD>
+    <TD>-0.015740511263665713</TD>
+    <TD>0.018602679</TD>
+    <TD>14.114739</TD>
+    <TD>1.0586329</TD>
+    <TD>-75.31202</TD>
+    <TD>5.264813</TD>
+    <TD>213686.17561107542</TD>
+    <TD>1.1543327750411125E7</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 1938879392834628992</TD>
+    <TD>354.4139901638686</TD>
+    <TD>45.660543062195465</TD>
+    <TD>1.6214076386380205</TD>
+    <TD>0.012172016</TD>
+    <TD>0.042446904</TD>
+    <TD>-6.879509968986206E-4</TD>
+    <TD>0.010557607</TD>
+    <TD>0.04244132905902517</TD>
+    <TD>0.009992574</TD>
+    <TD>13.22267</TD>
+    <TD>0.79939556</TD>
+    <TD>-69.60435</TD>
+    <TD>2.3015978</TD>
+    <TD>226792.71830297814</TD>
+    <TD>8664218.799713798</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 6050341389317043712</TD>
+    <TD>244.2836729834823</TD>
+    <TD>-23.537885406012457</TD>
+    <TD>2.733814895797555</TD>
+    <TD>0.024186915</TD>
+    <TD>0.0769762</TD>
+    <TD>-0.019919013185788002</TD>
+    <TD>0.029617498</TD>
+    <TD>0.07435434472043882</TD>
+    <TD>0.021241268</TD>
+    <TD>14.424671</TD>
+    <TD>1.3072453</TD>
+    <TD>-67.24365</TD>
+    <TD>6.4546356</TD>
+    <TD>149751.3889727439</TD>
+    <TD>5319093.089832358</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 3295253979286613376</TD>
+    <TD>73.83928730955472</TD>
+    <TD>11.744788255484785</TD>
+    <TD>9.332112603664845</TD>
+    <TD>0.021374073</TD>
+    <TD>0.6739736</TD>
+    <TD>0.2606898671051353</TD>
+    <TD>0.02617019</TD>
+    <TD>-0.6215152643352853</TD>
+    <TD>0.019970087</TD>
+    <TD>14.326151</TD>
+    <TD>2.354063</TD>
+    <TD>-61.63266</TD>
+    <TD>1.8852242</TD>
+    <TD>122765.38461655795</TD>
+    <TD>1700071.1950761995</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 239604478711410048</TD>
+    <TD>48.84017544994499</TD>
+    <TD>42.07173646898211</TD>
+    <TD>4.464254917529189</TD>
+    <TD>0.025787931</TD>
+    <TD>0.23366767</TD>
+    <TD>-0.20397837171879735</TD>
+    <TD>0.029510815</TD>
+    <TD>0.1139886180987664</TD>
+    <TD>0.024517752</TD>
+    <TD>11.342435</TD>
+    <TD>0.8329582</TD>
+    <TD>-59.66143</TD>
+    <TD>1.2535826</TD>
+    <TD>192136.9451424325</TD>
+    <TD>3671261.7018033415</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 2732027223812601728</TD>
+    <TD>341.6114983118966</TD>
+    <TD>13.66907050267884</TD>
+    <TD>1.9302847074997191</TD>
+    <TD>0.025157647</TD>
+    <TD>0.031557452</TD>
+    <TD>0.02029292297893273</TD>
+    <TD>0.025767164</TD>
+    <TD>0.024167541960592617</TD>
+    <TD>0.021774413</TD>
+    <TD>14.389059</TD>
+    <TD>1.4649477</TD>
+    <TD>-59.341167</TD>
+    <TD>5.68382</TD>
+    <TD>139542.6563382871</TD>
+    <TD>8536513.559032157</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 1944080701313080064</TD>
+    <TD>358.52542951214946</TD>
+    <TD>51.051447284353465</TD>
+    <TD>1.8377784699777102</TD>
+    <TD>0.0154742</TD>
+    <TD>0.037796516</TD>
+    <TD>-0.0318189104521565</TD>
+    <TD>0.012031651</TD>
+    <TD>-0.020399349153260048</TD>
+    <TD>0.011557695</TD>
+    <TD>13.560461</TD>
+    <TD>0.8586798</TD>
+    <TD>-53.273388</TD>
+    <TD>3.1634433</TD>
+    <TD>205380.41005123823</TD>
+    <TD>9987447.623894736</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 2048495990544659968</TD>
+    <TD>294.2387241226788</TD>
+    <TD>36.466030345189594</TD>
+    <TD>4.856475032943039</TD>
+    <TD>0.024367515</TD>
+    <TD>0.33980265</TD>
+    <TD>0.1383857315770638</TD>
+    <TD>0.025208656</TD>
+    <TD>0.31034695899789216</TD>
+    <TD>0.028356625</TD>
+    <TD>12.423434</TD>
+    <TD>1.2201328</TD>
+    <TD>-52.53939</TD>
+    <TD>1.2971629</TD>
+    <TD>268104.0015193671</TD>
+    <TD>3832232.0569445565</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 1820499678857308800</TD>
+    <TD>299.71634740512167</TD>
+    <TD>17.65463738275199</TD>
+    <TD>2.286035214677214</TD>
+    <TD>0.012737935</TD>
+    <TD>0.035326004</TD>
+    <TD>-0.005281622580097321</TD>
+    <TD>0.011839545</TD>
+    <TD>0.034928943698509185</TD>
+    <TD>0.011673202</TD>
+    <TD>12.518217</TD>
+    <TD>0.78505135</TD>
+    <TD>-48.13606</TD>
+    <TD>1.3250527</TD>
+    <TD>137297.31230098882</TD>
+    <TD>8885963.920003444</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 4362243496226418304</TD>
+    <TD>261.22940112815763</TD>
+    <TD>-5.36984833626026</TD>
+    <TD>6.663249093527167</TD>
+    <TD>0.017770978</TD>
+    <TD>0.571608</TD>
+    <TD>0.4712306415076457</TD>
+    <TD>0.0200617</TD>
+    <TD>0.32353887357286104</TD>
+    <TD>0.01371728</TD>
+    <TD>12.712979</TD>
+    <TD>1.5408716</TD>
+    <TD>-48.0115</TD>
+    <TD>0.6974398</TD>
+    <TD>262171.09150649037</TD>
+    <TD>3056515.87155536</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 6630242174207032960</TD>
+    <TD>275.9998378178594</TD>
+    <TD>-63.31590775871635</TD>
+    <TD>1.4707324730743356</TD>
+    <TD>0.014923599</TD>
+    <TD>0.02072316</TD>
+    <TD>8.74895188301928E-4</TD>
+    <TD>0.008988405</TD>
+    <TD>-0.020704683357619883</TD>
+    <TD>0.010223512</TD>
+    <TD>12.452887</TD>
+    <TD>0.6658611</TD>
+    <TD>-47.72273</TD>
+    <TD>2.1662426</TD>
+    <TD>196276.01827828994</TD>
+    <TD>1.3931537265579818E7</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 956782825081401728</TD>
+    <TD>95.41667462371616</TD>
+    <TD>40.25207910078581</TD>
+    <TD>2.989914127161519</TD>
+    <TD>0.02084737</TD>
+    <TD>0.02053651</TD>
+    <TD>0.017325854941940614</TD>
+    <TD>0.018530818</TD>
+    <TD>-0.011025560006235117</TD>
+    <TD>0.015324226</TD>
+    <TD>14.010474</TD>
+    <TD>1.2600164</TD>
+    <TD>-44.325287</TD>
+    <TD>2.1532762</TD>
+    <TD>50671.24139666112</TD>
+    <TD>7378154.080760871</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 4489676137969788160</TD>
+    <TD>268.14256642538993</TD>
+    <TD>10.431667172289215</TD>
+    <TD>5.079610359249243</TD>
+    <TD>0.013163624</TD>
+    <TD>0.27653137</TD>
+    <TD>0.22902372318823952</TD>
+    <TD>0.012482598</TD>
+    <TD>0.1549765623915537</TD>
+    <TD>0.0113009745</TD>
+    <TD>13.259858</TD>
+    <TD>1.3752899</TD>
+    <TD>-42.14798</TD>
+    <TD>1.1242456</TD>
+    <TD>248605.4943823252</TD>
+    <TD>4567208.390872132</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 2149827879807091584</TD>
+    <TD>271.26769094197</TD>
+    <TD>55.18704634376487</TD>
+    <TD>5.429664054427979</TD>
+    <TD>0.011521069</TD>
+    <TD>0.14433436</TD>
+    <TD>0.09964671074413843</TD>
+    <TD>0.014555529</TD>
+    <TD>-0.10441715667429034</TD>
+    <TD>0.016243355</TD>
+    <TD>13.923556</TD>
+    <TD>1.7209558</TD>
+    <TD>-33.38061</TD>
+    <TD>1.7649468</TD>
+    <TD>143394.80245673572</TD>
+    <TD>5394991.23971569</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 4306481867124380672</TD>
+    <TD>288.5418433074325</TD>
+    <TD>7.764088686697535</TD>
+    <TD>9.755774282834977</TD>
+    <TD>0.025668267</TD>
+    <TD>0.5426925</TD>
+    <TD>-0.5230774799708117</TD>
+    <TD>0.024455445</TD>
+    <TD>0.14458591438781293</TD>
+    <TD>0.022384018</TD>
+    <TD>7.215036</TD>
+    <TD>0.20176315</TD>
+    <TD>-33.20782</TD>
+    <TD>0.18897563</TD>
+    <TD>167878.0141679922</TD>
+    <TD>3018254.585459181</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 3260079227925564160</TD>
+    <TD>62.258543042656264</TD>
+    <TD>2.7606440529647585</TD>
+    <TD>32.11152458753816</TD>
+    <TD>0.027104093</TD>
+    <TD>6.1367607</TD>
+    <TD>-3.614895991107548</TD>
+    <TD>0.02957095</TD>
+    <TD>-4.959068507315504</TD>
+    <TD>0.020177746</TD>
+    <TD>11.732741</TD>
+    <TD>2.126585</TD>
+    <TD>-32.70663</TD>
+    <TD>0.3688173</TD>
+    <TD>177903.8775358013</TD>
+    <TD>931024.8178799257</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 4591145358813373312</TD>
+    <TD>272.110282486022</TD>
+    <TD>30.910305075713367</TD>
+    <TD>6.14289189442519</TD>
+    <TD>0.014688083</TD>
+    <TD>0.2008946</TD>
+    <TD>-0.16218335847932594</TD>
+    <TD>0.014519713</TD>
+    <TD>-0.11855460261378697</TD>
+    <TD>0.01521075</TD>
+    <TD>14.199904</TD>
+    <TD>1.905796</TD>
+    <TD>-32.21422</TD>
+    <TD>2.7762294</TD>
+    <TD>161576.72207149814</TD>
+    <TD>4941257.915087091</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 4493986116173277824</TD>
+    <TD>262.65307081411873</TD>
+    <TD>12.692623551049676</TD>
+    <TD>1.4885242219742958</TD>
+    <TD>0.0150667485</TD>
+    <TD>0.0025824916</TD>
+    <TD>9.081832051795289E-4</TD>
+    <TD>0.015425399</TD>
+    <TD>-0.0024175329673688985</TD>
+    <TD>0.013452248</TD>
+    <TD>13.091713</TD>
+    <TD>0.87091064</TD>
+    <TD>-29.651764</TD>
+    <TD>1.8839794</TD>
+    <TD>38430.89121903624</TD>
+    <TD>2.2153969370550703E7</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 2074935023255435520</TD>
+    <TD>302.54349258570693</TD>
+    <TD>42.48617477092855</TD>
+    <TD>2.315642593720217</TD>
+    <TD>0.017676927</TD>
+    <TD>0.035098217</TD>
+    <TD>-0.009830428691196571</TD>
+    <TD>0.019526392</TD>
+    <TD>-0.03369343534714965</TD>
+    <TD>0.022331491</TD>
+    <TD>11.353207</TD>
+    <TD>0.57231903</TD>
+    <TD>-28.091537</TD>
+    <TD>1.1105174</TD>
+    <TD>227808.73630923821</TD>
+    <TD>1.5031798731926559E7</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 4454410779977796736</TD>
+    <TD>238.66781530580897</TD>
+    <TD>8.58033537032281</TD>
+    <TD>12.496150103162238</TD>
+    <TD>0.029610528</TD>
+    <TD>1.1021252</TD>
+    <TD>0.9823029682237714</TD>
+    <TD>0.024030276</TD>
+    <TD>-0.49976077106601047</TD>
+    <TD>0.022415666</TD>
+    <TD>6.249247</TD>
+    <TD>0.24854279</TD>
+    <TD>-26.294743</TD>
+    <TD>0.6192364</TD>
+    <TD>262429.9589935633</TD>
+    <TD>2975862.315545785</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 394136371230286976</TD>
+    <TD>5.612005462676858</TD>
+    <TD>48.649282810554055</TD>
+    <TD>3.264886823413163</TD>
+    <TD>0.011535587</TD>
+    <TD>0.07400276</TD>
+    <TD>0.001368608113688637</TD>
+    <TD>0.009813811</TD>
+    <TD>0.07399010054664107</TD>
+    <TD>0.008221257</TD>
+    <TD>12.489277</TD>
+    <TD>0.9392843</TD>
+    <TD>-25.409115</TD>
+    <TD>0.6382736</TD>
+    <TD>267132.04460286367</TD>
+    <TD>1.178691966272669E7</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 3448378118967198208</TD>
+    <TD>85.09645590701832</TD>
+    <TD>32.56978876251277</TD>
+    <TD>7.458379783497275</TD>
+    <TD>0.023715928</TD>
+    <TD>0.3046295</TD>
+    <TD>-0.25219132587046406</TD>
+    <TD>0.020724673</TD>
+    <TD>0.17087621024190125</TD>
+    <TD>0.014019458</TD>
+    <TD>8.992445</TD>
+    <TD>0.5706816</TD>
+    <TD>-25.069372</TD>
+    <TD>0.30474192</TD>
+    <TD>213571.55080365515</TD>
+    <TD>5229618.867067172</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 2104533154705749888</TD>
+    <TD>283.0436260388436</TD>
+    <TD>41.84623357115029</TD>
+    <TD>2.789635276060652</TD>
+    <TD>0.008627277</TD>
+    <TD>0.03581563</TD>
+    <TD>-0.013371218027697335</TD>
+    <TD>0.009844974</TD>
+    <TD>-0.03322604099345069</TD>
+    <TD>0.010202511</TD>
+    <TD>12.451006</TD>
+    <TD>0.8385477</TD>
+    <TD>-24.765942</TD>
+    <TD>1.6967996</TD>
+    <TD>181688.22480958517</TD>
+    <TD>1.4153235060793022E7</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 2026319223312827520</TD>
+    <TD>293.41891085044944</TD>
+    <TD>29.040189886854378</TD>
+    <TD>9.85481078356489</TD>
+    <TD>0.011876215</TD>
+    <TD>0.5604831</TD>
+    <TD>-0.5497519770910402</TD>
+    <TD>0.009199636</TD>
+    <TD>0.1091516334450645</TD>
+    <TD>0.011817879</TD>
+    <TD>9.137912</TD>
+    <TD>0.6947832</TD>
+    <TD>-22.81628</TD>
+    <TD>0.20614235</TD>
+    <TD>247300.49087110825</TD>
+    <TD>4348754.1462824615</TD>
+  </TR>
+  <TR>
+    <TD>Gaia DR3 4270814637616488064</TD>
+    <TD>274.96183629691126</TD>
+    <TD>-1.938612759804832</TD>
+    <TD>52.396292205290564</TD>
+    <TD>0.0171099</TD>
+    <TD>0.42803693</TD>
+    <TD>-0.4140637404226508</TD>
+    <TD>0.019432956</TD>
+    <TD>-0.10847507667730025</TD>
+    <TD>0.016565036</TD>
+    <TD>9.063088</TD>
+    <TD>1.6937246</TD>
+    <TD>-14.419985</TD>
+    <TD>0.2563099</TD>
+    <TD>10571.076298232618</TD>
+    <TD>1294173.8853048396</TD>
+  </TR>
+</TABLEDATA>
+</DATA>
+</TABLE>
+<RESOURCE type="meta" utype="adhoc:service" name="ancillary">
+  <DESCRIPTION>Retrieve DataLink file containing ancillary data for source</DESCRIPTION>
+  <PARAM name="accessURL" datatype="char" arraysize="*" value="https://gea.esac.esa.int/data-server/datalink/links"/>
+  <PARAM name="standardID" datatype="char" arraysize="*" value="ivo://ivoa.net/std/DataLink#links-1.0"/>
+  <GROUP name="inputParams">
+    <PARAM arraysize="*" datatype="char" name="ID" ref="DESIGNATION" value="">
+    </PARAM>
+  </GROUP>
+</RESOURCE>
+</RESOURCE>
+</VOTABLE>
